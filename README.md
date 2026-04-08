@@ -1,9 +1,11 @@
 # GenAI Technology Stack
 ## (based on the fantastic work of [Raphael Moraes](raphaelmoraes.dev) )
 
-### [Website](https://.vercel.app/)
+### [Website](https://agentic-canvas.vercel.app/)
 
 NOTE: Content of this website is not mine. Attribution is to Raphael Moraes. 
+
+<img width="1505" height="936" alt="Screenshot 2026-04-08 of Agentic Canvas" src="https://github.com/user-attachments/assets/fdff4e6b-ac49-46b5-b0f9-cc5f9fa58282" />
 
 # Background
 
