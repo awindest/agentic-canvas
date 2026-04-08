@@ -1,44 +1,42 @@
-# Timeline of LLMs
-## (based on JQuery Timeline widget)
+# GenAI Technology Stack
+## (based on the fantastic work of [Raphael Moraes](raphaelmoraes.dev) )
 
-### [Website](https://llm-timeline-two.vercel.app/)
+### [Website](https://.vercel.app/)
 
-<img width="979" height="792" alt="Screenshot_of_timeline" src="https://github.com/user-attachments/assets/8877e956-6f33-4345-8ad6-6e6e235fd782" />
+NOTE: Content of this website is not mine. Attribution is to Raphael Moraes. 
+
+# Background
+
+I did this experiment to learn about the tech stack and how to create a website with Claude Code from a specification file.
+
+I leveraged Raph's work to understand how to
+create a CLAUDE.md file and a repeatable AI-Prompt specification for a website to input into Claude Code.
+
+Raph's work used the React framework and I transmorgified it to use Sveltekit. It worked. I also played around with adding some tooltips to the AI Tools section so it was easier to learn about all the tools Raph has in his genAI tech stack.
 
 # My Process
 
-First, I went to the wikipedia page for a [list of large language models](https://en.wikipedia.org/wiki/List_of_large_language_models). I copied the table and pasted it into a spreadsheet instead of having Claude scrape it. (Next time, I will paste the table into Claude and transform the data into a JSON data structure.)
+First, I edited the CLAUDE.md file; see below.
 
 Second, I chatted with Claude about how to create a prompt to get what I wanted. 
 
 I then created a sveltekit project:
 
 ```
-npx sv create llm-timeline
+npx sv create agentic-canvas
 ```
 
 (I selected the skeleton project and typescript)
 
 
-Then selected the llm-timeline directory in Claude Code and I started prompting Claude as follows.
+Then I selected the agentic-canvas directory in Claude Code and I started prompting Claude as follows.
 
 # Prompts for Claude Code
 
 ```
-I have a SvelteKit project. I want a single Timeline.svelte component first, then wire it into a SvelteKit route (+page.svelte).
+I have a SvelteKit project. I want to convert the agentic-canvas-react project to Sveltekit. I only want the ./agentic-canvas-react/pages/canvas.tsx to be ported to a single AgenticCanvas.svelte component first, then wire it into a SvelteKit route (+page.svelte). I only want one page so forget about the NavBar.tsx file. Otherwise use all of the specifications in the AI-PROMPT-BUILD-SPEC.md file and build the AgenticCanvas.svelte component modeled after canvas.tsx
 
-Build the Timeline.svelte component modeled after jQuery Timeline found in the jquery.timeline-2.1.3 folder.
-
-Use these data found in List_of_LLMs.xlsx.
-
-The timeline should be horizontal, with events showing Name and release date. On hover, show Developer, Number of parameters (billion), Corpus size,  Training Costs and Notes. Keep all hyperlinks.
-
-Title should be "A Timeline of LLMs".
-Use the styles found in the ./src/lib/styles directory. 
-
-Stretch the x-axis so that the elements don't overlap and get rid of the scrollbar adding forward and backward arrows in the middle of the left and right hand margins
-
-Make the timeline a little taller and add a github icon button in the lower right linked to the github repository: https://github.com/awindest/llm-timeline
+For the Tools Reference, on hover, show a brief less than 100 word description of the underlying technology as a tooltip.
 
 ```
 
