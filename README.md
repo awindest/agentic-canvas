@@ -34,9 +34,19 @@ Then I selected the agentic-canvas directory in Claude Code and I started prompt
 # Prompts for Claude Code
 
 ```
-I have a SvelteKit project. I want to convert the agentic-canvas-react project to Sveltekit. I only want the ./agentic-canvas-react/pages/canvas.tsx to be ported to a single AgenticCanvas.svelte component first, then wire it into a SvelteKit route (+page.svelte). I only want one page so forget about the NavBar.tsx file. Otherwise use all of the specifications in the AI-PROMPT-BUILD-SPEC.md file and build the AgenticCanvas.svelte component modeled after canvas.tsx
+I have a SvelteKit project. I want to convert the agentic-canvas-react project to Sveltekit. 
+
+I only want the ./agentic-canvas-react/pages/canvas.tsx to be ported to a single AgenticCanvas.svelte component first, then wire it into a SvelteKit route (+page.svelte). 
+
+I only want one page so forget about the NavBar.tsx file. 
+
+Otherwise use all of the specifications in the AI-PROMPT-BUILD-SPEC.md file and build the AgenticCanvas.svelte component modeled after canvas.tsx
 
 For the Tools Reference, on hover, show a brief less than 100 word description of the underlying technology as a tooltip.
+
+Add a github icon button in the upper right corner linked to the github repository: https://github.com/awindest/agentic-canvas
+
+Use position: absolute on the button and make the root <div> a positioning context.
 
 ```
 

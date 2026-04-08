@@ -552,7 +552,21 @@
 <!-- ════════════════════════════════════════════════════════════
      ROOT
 ═══════════════════════════════════════════════════════════════ -->
-<div style="background:{PALETTE.bg}; min-height:100vh; font-family:{typography.fontSans}">
+<div style="background:{PALETTE.bg}; min-height:100vh; font-family:{typography.fontSans}; position:relative">
+
+	<!-- GitHub link — fixed top-right -->
+	<a
+		href="https://github.com/awindest/agentic-canvas"
+		target="_blank"
+		rel="noopener noreferrer"
+		class="gh-btn"
+		aria-label="View source on GitHub"
+	>
+		<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+			<path d="M12 0C5.37 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.089-.744.083-.729.083-.729 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.605-2.665-.305-5.467-1.334-5.467-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23a11.52 11.52 0 013.003-.404c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.652.242 2.873.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.898-.015 3.293 0 .322.216.694.825.576C20.565 21.796 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+		</svg>
+	</a>
+
 	<div style="padding:40px 18px 22px">
 		<!-- Title Block -->
 		<div style="margin-bottom:28px; text-align:center">
@@ -1121,5 +1135,37 @@
 		.grid-tools {
 			grid-template-columns: 1fr;
 		}
+	}
+
+	/* ── GitHub button ─────────────────────────────────── */
+	.gh-btn {
+		position: absolute;
+		top: 14px;
+		right: 16px;
+		z-index: 50;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 36px;
+		height: 36px;
+		background: rgba(255, 255, 255, 0.06);
+		border: 1px solid rgba(255, 255, 255, 0.12);
+		border-radius: 8px;
+		color: #94a3b8;
+		transition:
+			background 0.15s,
+			color 0.15s,
+			border-color 0.15s;
+	}
+
+	.gh-btn:hover {
+		background: rgba(255, 255, 255, 0.12);
+		border-color: rgba(255, 255, 255, 0.25);
+		color: #f1f5f9;
+	}
+
+	.gh-btn svg {
+		width: 18px;
+		height: 18px;
 	}
 </style>
