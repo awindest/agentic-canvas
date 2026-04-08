@@ -1,10 +1,13 @@
 <script lang="ts">
-  import AgenticCanvas from '$lib/components/AgenticCanvas.svelte';
+	import AgenticCanvas from '$lib/components/AgenticCanvas.svelte';
 </script>
 
 <svelte:head>
-  <title>GenAI Technology Stack Canvas — indest_labs.dev</title>
-  <meta name="description" content="Opinionated, layered AI-native engineering stack for Vibe Coders" />
+	<title>GenAI Technology Stack Canvas — Indest Labs</title>
+	<meta
+		name="description"
+		content="Opinionated, layered AI-native engineering stack for Vibe Coders"
+	/>
 </svelte:head>
 
 <AgenticCanvas />
